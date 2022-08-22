@@ -28,7 +28,13 @@ class Set implements SetInterface {
 	}
 
 	public function remove($item): void {
-		$this->items = array_diff($this->items, [$item]);
+		$this->items = array_udiff(
+			$this->items,
+			[$item],
+			static function($a, $b): int {
+				return ($a === $b) ? 0 : -1;
+			},
+		);
 	}
 
 	public function toArray(): array {
