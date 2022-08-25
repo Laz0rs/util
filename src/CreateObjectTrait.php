@@ -1,4 +1,5 @@
 <?php
+
 namespace Laz0r\Util;
 
 use ReflectionClass;
