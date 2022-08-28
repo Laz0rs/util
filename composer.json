@@ -1,0 +1,42 @@
+{
+	"autoload": {
+		"psr-4": {
+			"Laz0r\\Util\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Laz0r\\UtilTest\\": "test/"
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": false
+		}
+	},
+	"description": "Library of common utilities",
+	"keywords": [
+		"Laz0r",
+		"common",
+		"library",
+		"utilities",
+		"utility"
+	],
+	"license": "MIT",
+	"name": "laz0r/util",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/laz0rs/util"
+		}
+	],
+	"require": {
+		"php": "^7.4 || ~8.0.0 || ~8.1.0"
+	},
+	"require-dev": {
+		"fig-r/psr2r-sniffer": "^1.3",
+		"phpunit/phpunit": "9.5.16",
+		"vimeo/psalm": "^4.26"
+	},
+	"type": "library"
+}
