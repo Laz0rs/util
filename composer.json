@@ -27,7 +27,7 @@
 	"repositories": [
 		{
 			"type": "vcs",
-			"url": "https://github.com/laz0rs/util"
+			"url": "https://github.com/Laz0rs/util"
 		}
 	],
 	"require": {
